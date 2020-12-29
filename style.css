@@ -1,0 +1,35 @@
+@font-face {
+	font-family: "SigmarOne";
+	src: url(./SigmarOne-Regular.ttf);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+	margin: 0;
+	overflow: hidden;
+	height: 100vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.text {
+	font-size: 100px;
+	color: #fbc810;
+	font-family: SigmarOne;
+	/* Fallowing CSS property adds the reflection and it is prohibited */
+	-webkit-box-reflect: below -50px linear-gradient(transparent, #00000024);
+	filter: url(#fire);
+	text-shadow: 0 0 5px #fb7d10, 0 0 5px #fb7d10, 0 0 5px #fb7d10;
+}
